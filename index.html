@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    
+    <header>
+
+        <h1>Tic-Tac-Toe | Friend or Foe</h1>
+
+    </header>
+
+    <section class="gameContainer">
+
+        <div class="backgroundVid">
+
+            <video src="video/background_video.mp4" autoplay loop muted></video>
+
+        </div>
+
+        <div class="backgroundMusic">
+
+            <audio id="background_music" autoplay loop>
+                <source src="audio/background_music.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+              </audio>
+
+            <button id="musicToggle">🔇</button>
+
+        </div>
+
+        <article class="gameBoard">
+
+            <div cellIndex="0" class="cell"></div>
+            <div cellIndex="1" class="cell"></div>
+            <div cellIndex="2" class="cell"></div>
+            <div cellIndex="3" class="cell"></div>
+            <div cellIndex="4" class="cell"></div>
+            <div cellIndex="5" class="cell"></div>
+            <div cellIndex="6" class="cell"></div>
+            <div cellIndex="7" class="cell"></div>
+            <div cellIndex="8" class="cell"></div>
+
+        </article>
+
+        <article class="gameMessage">
+
+            <h2>Instructions</h2>
+
+            <p>GET THREE OF YOUR MARKS IN A ROW — ACROSS, DOWN, OR DIAGONALLY — BEFORE YOUR OPPONENT DOES. IT'S A BATTLE OF WITS AND STRATEGY.</p>
+
+        </article>
+
+        <article class="gameStatus">
+
+            <h2 class="statusText"></h2>
+
+        </article>
+        
+        <div class="restart">
+
+            <button id="restartBtn">Play Again!</button>
+
+        </div>
+        
+
+    </section>
+
+    <script src="scripts/index.js"></script>
+</body>
+</html>
