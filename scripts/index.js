@@ -182,6 +182,9 @@ function restartGame() {
 }
 
 const music = document.getElementById("background_music");
+
+    music.volume = 0.2;
+
 const toggleBtn = document.getElementById("musicToggle")
 
 toggleBtn.addEventListener("click", () => {
@@ -200,3 +203,13 @@ toggleBtn.addEventListener("click", () => {
     }
 
 });
+
+document.addEventListener("click", () => {
+
+    if (music.muted) {
+
+        music.muted = false;
+
+    }
+
+}, { once: true });
