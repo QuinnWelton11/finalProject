@@ -212,4 +212,16 @@ document.addEventListener("click", () => {
 
     }
 
+    const video = document.querySelector("video");
+
+    if (video && video.paused) {
+
+        video.play().catch(err => {
+
+            console.warn("Video playback failed:", err);
+
+        });
+
+    }
+
 }, { once: true });
