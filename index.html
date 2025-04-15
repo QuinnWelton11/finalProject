@@ -23,20 +23,23 @@
 
         <div class="backgroundVid">
 
-            <video src="video/background_video.mp4" loop muted playsinline></video>
+            <video id="backgroundVideo" loop muted playsinline>
+
+                <source src="video/background_video.mp4" type="video/mp4">
+
+            </video>
 
         </div>
 
         <div class="backgroundMusic">
 
-            <audio id="background_music" loop muted>
+            <audio id="background_music" loop>
 
                 <source src="audio/background_music.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
 
             </audio>
 
-            <button id="musicToggle">🔇</button>
+            <button id="mediaToggle">▶️</button>
 
         </div>
 
@@ -60,14 +63,40 @@
 
             <p>GET THREE OF YOUR MARKS IN A ROW — ACROSS, DOWN, OR DIAGONALLY — BEFORE YOUR OPPONENT DOES. IT'S A BATTLE OF WITS AND STRATEGY.</p>
 
-        </article>
+            <section class="difficulty">
 
-        <article class="gameStatus">
+                <label for="difficultyLevel">Difficulty:</label>
 
-            <h2 class="statusText"></h2>
+                <select id="difficultyLevel">
 
-        </article>
+                    <option value="easy">Easy</option>
+
+                    <option value="normal" selected>Normal</option>
+
+                    <option value="hard">Hard</option>
+
+                    <option value="legendary">Legendary</option>
+
+                </select>
+
+                <p id="difficultyDesc" class="difficultyTxt">
+
+                    I like a good challenge!
+
+                </p>
+
+            </section>
+
+            
+            <section class="gameStatus">
+
+                <h2 class="statusText"></h2>
+
+            </section>
         
+
+        </article>
+
         <div class="restart">
 
             <button id="restartBtn">Play Again!</button>

@@ -19,9 +19,9 @@ header h1 {
   text-align: center;
   color: rgb(255, 255, 255);
   text-shadow: 1px 1px 10px #bbffff;
-  font-size: 2rem;
+  font-size: 20px;
   max-width: 18.75rem;
-  margin: 2rem auto;
+  margin: 3rem auto;
 }
 
 .gameContainer h1,
@@ -30,31 +30,55 @@ header h1 {
 .gameContainer h4 {
   color: white;
   font-family: "Audiowide";
+  font-size: 16px;
 }
 .gameContainer p {
   color: white;
   font-family: "Silkscreen";
 }
 .gameContainer .gameMessage {
-  max-width: 17.5rem;
+  max-width: 16rem;
   margin: 2rem auto;
-  font-size: 1rem;
+  font-size: 12px;
   background-color: #4a1c42;
   box-shadow: 1px 1px 15px 10px rgba(255, 97, 229, 0.8196078431);
   padding: 0.5rem 1rem;
   border-radius: 5px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+.gameContainer .gameMessage .difficulty label {
+  font-family: "Audiowide";
+  color: white;
+  font-size: 16px;
+  margin-right: 1rem;
+}
+.gameContainer .gameMessage .difficulty select {
+  background-color: #34142e;
+  box-shadow: 0px 0px 5px 3px rgba(255, 97, 229, 0.8196078431);
+  color: white;
+  font-family: "Silkscreen";
+  padding: 0.25rem;
+  font-size: 12px;
+}
+.gameContainer .gameMessage .difficulty .difficultyTxt {
+  background-color: #34142e;
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.2705882353);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
 }
 .gameContainer .gameStatus {
-  max-width: 67.5rem;
-  margin: 3rem auto;
+  max-width: 16rem;
+  margin: 1.5rem auto;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.8392156863);
-  box-shadow: 1px 1px 15px 8px #0ff;
-  padding: 1rem;
-  font-size: 1rem;
+  background-color: #34142e;
+  border-radius: 5px;
+  padding: 0.05rem;
 }
 .gameContainer .gameStatus .statusText {
   font-family: "Silkscreen";
+  font-size: 12px;
 }
 
 .restart {
@@ -98,17 +122,17 @@ header h1 {
   cursor: pointer;
 }
 
-#musicToggle {
+#mediaToggle {
   position: fixed;
-  top: 1rem;
+  top: 0.5rem;
   right: 1rem;
   z-index: 100;
   background-color: rgba(0, 0, 0, 0.7);
   color: white;
   border: none;
   border-radius: 50%;
-  width: 3rem;
-  height: 3rem;
+  width: 2rem;
+  height: 2rem;
   font-size: 1.5rem;
   cursor: pointer;
   display: flex;
@@ -117,7 +141,7 @@ header h1 {
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
   transition: background-color 0.3 ease;
 }
-#musicToggle :hover {
+#mediaToggle :hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -154,5 +178,10 @@ header h1 {
   }
   .gameContainer .restart button {
     font-size: 1.25rem;
-  }/*# sourceMappingURL=styles.css.map */
-}
+  }
+  #mediaToggle {
+    width: 5rem;
+    height: 5rem;
+    font-size: 2rem;
+  }
+}/*# sourceMappingURL=styles.css.map */
