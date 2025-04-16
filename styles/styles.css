@@ -21,7 +21,7 @@ header h1 {
   text-shadow: 1px 1px 10px #bbffff;
   font-size: 20px;
   max-width: 18.75rem;
-  margin: 3.5rem auto;
+  margin-top: 3.5rem;
 }
 
 .gameContainer h2,
@@ -37,7 +37,7 @@ header h1 {
 }
 .gameContainer .gameMessage {
   max-width: 16rem;
-  margin: 2rem auto;
+  margin: 1.5rem auto;
   font-size: 12px;
   background-color: #4a1c42;
   box-shadow: 1px 1px 15px 10px rgba(255, 97, 229, 0.8196078431);
@@ -93,14 +93,15 @@ header h1 {
   text-align: center;
 }
 .restart button {
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-family: "Silkscreen";
   font-weight: 600;
   border: none;
-  padding: 1rem 2rem;
-  border-radius: 8px;
+  width: 288px;
+  padding: 1rem;
+  border-radius: 5px;
   background-color: rgba(0, 0, 0, 0.656);
-  box-shadow: 1px 1px 20px 5px #0ff;
+  box-shadow: 0px 0px 12px 10px rgba(0, 255, 255, 0.6549019608);
   color: rgb(255, 255, 255);
   text-shadow: 2px 2px 4px #0ff;
   cursor: pointer;
@@ -113,7 +114,7 @@ header h1 {
   display: grid;
   grid-template-columns: repeat(3, auto);
   width: 16rem;
-  margin: 2rem auto;
+  margin: 1rem auto;
   text-align: center;
 }
 .gameBoard .cell {
