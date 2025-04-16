@@ -331,6 +331,8 @@ const mediaToggle = document.getElementById("mediaToggle");
 
 music.volume = 0.2;
 
+video.load();
+
 mediaToggle.addEventListener("click", () => {
 
     if (music.paused) {
