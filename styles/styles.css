@@ -21,16 +21,15 @@ header h1 {
   text-shadow: 1px 1px 10px #bbffff;
   font-size: 20px;
   max-width: 18.75rem;
-  margin: 3rem auto;
+  margin: 3.5rem auto;
 }
 
-.gameContainer h1,
 .gameContainer h2,
 .gameContainer h3,
 .gameContainer h4 {
   color: white;
   font-family: "Audiowide";
-  font-size: 16px;
+  font-size: 24px;
 }
 .gameContainer p {
   color: white;
@@ -59,6 +58,14 @@ header h1 {
   font-family: "Silkscreen";
   padding: 0.25rem;
   font-size: 12px;
+}
+.gameContainer .gameMessage .difficulty select:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #f750db;
+}
+.gameContainer .gameMessage .difficulty select:hover {
+  outline: none;
+  border: #3e1a37;
 }
 .gameContainer .gameMessage .difficulty .difficultyTxt {
   background-color: #34142e;
@@ -134,11 +141,13 @@ header h1 {
   width: 2rem;
   height: 2rem;
   font-size: 1.5rem;
+  font-family: "Silkscreen";
+  padding-bottom: 4.15px;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  box-shadow: 1px 1px 8px 2.5px #f750db;
   transition: background-color 0.3 ease;
 }
 #mediaToggle :hover {
@@ -156,12 +165,12 @@ header h1 {
   .gameContainer .gameMessage {
     max-width: 40rem;
     font-size: 1.25rem;
-    margin-top: 6rem;
-    margin-bottom: 6rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
   }
   .gameContainer .gameStatus {
     max-width: 40rem;
-    margin-bottom: 6rem;
+    margin-bottom: 3rem;
   }
   .gameContainer .gameBoard {
     width: 30.5rem;
@@ -179,9 +188,17 @@ header h1 {
   .gameContainer .restart button {
     font-size: 1.25rem;
   }
-  #mediaToggle {
+  .gameContainer #mediaToggle {
     width: 5rem;
     height: 5rem;
+    font-size: 3.5rem;
+    padding-bottom: 7.5px;
+  }
+  .gameContainer .difficulty label {
     font-size: 2rem;
+    color: red;
+  }
+  .gameContainer .difficulty select {
+    font-size: 12px;
   }
 }/*# sourceMappingURL=styles.css.map */

@@ -341,7 +341,7 @@ mediaToggle.addEventListener("click", () => {
 
         video.play()
 
-        mediaToggle.innerText = "⏸️";
+        mediaToggle.innerText = "🔇";
 
     } else {
 
@@ -349,7 +349,7 @@ mediaToggle.addEventListener("click", () => {
 
         video.pause()
 
-        mediaToggle.innerText = "▶️";
+        mediaToggle.innerText = "🔊";
 
     }
 
